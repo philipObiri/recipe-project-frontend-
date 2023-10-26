@@ -30,7 +30,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="navbar container">
+            <nav className="navbar container">
                 <a href="#!" className="logo">F<span>oo</span>diesHub</a>
                 <div className="nav-links">
                     { links.map((link)=>(
@@ -44,7 +44,7 @@ function Navbar() {
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </div>
-            </div>
+            </nav>
 
            {showSidebar && <Sidebar  close={closeSideBar} links={links} />}
         </>
